@@ -3,4 +3,68 @@ body {
     font-size: 18px;
     background-image: url(images/bg-header-desktop.png);
     background-repeat: no-repeat;
+    background-size: contain;
+}
+
+p {
+    color: hsl(210, 10%, 33%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+}
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-items {
+    grid-column: 2;
+}
+
+.grid-styling-1 {
+    font-size: 16px;
+
+}
+
+img[src="images/image-computer.png"] {
+    grid-row: 1 / span 3;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-styling-2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+#box-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button {
+    border-radius: 10px;
+}
+
+.ios {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.mac {
+    background-color: hsl(233, 100%, 69%);
+}
+
+footer {
+    background-color: rgb(240, 240, 245);
 }
