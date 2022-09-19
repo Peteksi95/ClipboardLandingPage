@@ -8,6 +8,7 @@ body {
 
 p {
     color: hsl(210, 10%, 33%);
+    line-height: 2em;
 }
 
 main {
@@ -17,6 +18,9 @@ main {
 
 .center {
     text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img[src="images/logo.svg"] {
@@ -25,7 +29,8 @@ img[src="images/logo.svg"] {
 }
 
 #box-2 {
-    margin-top: 6em;
+    margin: 6em auto 2em auto;
+    max-width: 700px;
 }
 
 .grid-container-1 {
@@ -39,6 +44,9 @@ img[src="images/logo.svg"] {
 
 .grid-styling-1 {
     font-size: 16px;
+    max-width: 500px;
+    margin-top: 3em;
+    margin-left: 3em;
 
 }
 
