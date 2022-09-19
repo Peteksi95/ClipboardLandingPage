@@ -19,6 +19,15 @@ main {
     text-align: center;
 }
 
+img[src="images/logo.svg"] {
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+#box-2 {
+    margin-top: 6em;
+}
+
 .grid-container-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -54,15 +63,30 @@ img[src="images/image-computer.png"] {
 }
 
 button {
-    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    border-radius: 35px;
+    border: none;
+    padding: 1em 1.5em 1em 1.5em;
+    margin: 1.5em 0.5em;
 }
 
 .ios {
     background-color: hsl(171, 66%, 44%);
 }
 
+.ios:hover {
+    cursor: pointer;
+    background-color: hsl(171, 67%, 57%);
+}
+
 .mac {
     background-color: hsl(233, 100%, 69%);
+}
+
+.mac:hover {
+    cursor: pointer;
+    background-color: hsl(233, 85%, 74%);
 }
 
 footer {
