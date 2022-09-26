@@ -4,10 +4,12 @@ body {
     background-image: url(images/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 0;
+    padding: 0;
 }
 
 p {
-    color: hsl(210, 10%, 33%);
+    color: hsl(201, 11%, 66%);
     line-height: 2em;
 }
 
@@ -29,7 +31,7 @@ img[src="images/logo.svg"] {
 }
 
 #box-2 {
-    margin: 6em auto 2em auto;
+    margin: 6em auto 4em auto;
     max-width: 700px;
 }
 
@@ -45,13 +47,20 @@ img[src="images/logo.svg"] {
 .grid-styling-1 {
     font-size: 16px;
     max-width: 500px;
-    margin-top: 3em;
-    margin-left: 3em;
-
+    margin: 0em 6em 0em 6em;
 }
 
 img[src="images/image-computer.png"] {
     grid-row: 1 / span 3;
+}
+
+img[src="images/image-devices.png"] {
+    margin-top: 3em;
+}
+
+#box-3 {
+    margin-top: 5em;
+    max-width: 905px;
 }
 
 .grid-container-2 {
@@ -62,12 +71,18 @@ img[src="images/image-computer.png"] {
 .grid-styling-2 {
     font-size: 16px;
     text-align: center;
+    margin: 2em 2em 4em 2em;
 }
 
 #box-5 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    gap: 3em;
+    max-width: 950px;
+}
+
+#box-6 {
+    margin-top: 6em;
 }
 
 button {
@@ -75,6 +90,7 @@ button {
     font-weight: 600;
     border-radius: 35px;
     border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     padding: 1em 1.5em 1em 1.5em;
     margin: 1.5em 0.5em;
 }
@@ -86,6 +102,7 @@ button {
 .ios:hover {
     cursor: pointer;
     background-color: hsl(171, 67%, 57%);
+    transition: ease 0.4s;
 }
 
 .mac {
@@ -95,8 +112,65 @@ button {
 .mac:hover {
     cursor: pointer;
     background-color: hsl(233, 85%, 74%);
+    transition: ease 0.4s;
 }
 
 footer {
     background-color: rgb(240, 240, 245);
+}
+
+.links {
+    position: relative;
+}
+
+.links-styling a {
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    max-width: fit-content;
+    margin: 6em auto 0em 25%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    align-items: center;
+}
+
+#footer-logo {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 3.5em;
+    margin-bottom: 0;
+}
+
+.socialmedia-links {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+a:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+
+#fb-logo:hover {
+    filter: invert(33%) sepia(85%) saturate(490%) hue-rotate(182deg) brightness(95%) contrast(83%);
+}
+
+#twitter-logo:hover {
+    filter: invert(70%) sepia(18%) saturate(1165%) hue-rotate(121deg) brightness(103%) contrast(95%);
+}
+
+#instagram-logo:hover {
+    filter: invert(33%) sepia(66%) saturate(3215%) hue-rotate(330deg) brightness(100%) contrast(98%);
 }
